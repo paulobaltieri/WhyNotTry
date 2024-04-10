@@ -9,12 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Circle()
+       Circle()
             .fill(.blue)
             .padding()
-        overlay(
-            Image(systemName: "figure.soccer")
-        )
+            .overlay(
+                Image(systemName:"figure.soccer")
+                    .font(.system(size: 230))
+                    .foregroundColor(.white)
+            )
     }
 }
 
